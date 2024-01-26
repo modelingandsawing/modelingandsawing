@@ -159,7 +159,7 @@
   border-radius: 10px;
   padding: 10px;
   background-color: var(--background-shade);
-  color: var(--foreground-color);
+  color: var(--foreground-shade);
 }
 
 .contactIcons {

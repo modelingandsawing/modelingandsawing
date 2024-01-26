@@ -1,5 +1,6 @@
 :root {
   --foreground-color: #121212;
+  --foreground-shade: #121212;
   --background-color: #edf0f0;
   --background-shade: #fff;
   --accent-color: antiquewhite;
@@ -8,8 +9,9 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-color: #edf0f0;
+    --foreground-schade: #121212;
     --background-color: #121212;
-    --background-shade: #000;
+    --background-shade: #edf0f0;
     --accent-color: #483b29;
   }
 }
