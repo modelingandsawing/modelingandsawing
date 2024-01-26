@@ -1,33 +1,35 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --foreground-color: #121212;
+  --background-color: #edf0f0;
+  --background-shade: #fff;
+  --accent-color: antiquewhite;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --foreground-color: #edf0f0;
+    --background-color: #121212;
+    --background-shade: #000;
+    --accent-color: #483b29;
   }
+}
+
+html,
+body {
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  margin: 0;
+  scroll-behavior: smooth;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  color: var(--foreground-color);
+  background: var(--background-color);
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+textarea:focus,
+input:focus {
+  outline: none;
 }
