@@ -1,6 +1,6 @@
 .icon {
   background-color: var(--accent-color);
-  color: var(--background-shade);
+  color: color-mix(in srgb, var(--foreground-color) 80%, transparent);
   aspect-ratio: 1;
   padding: 5px;
   border-radius: 10px;
